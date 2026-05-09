@@ -112,19 +112,19 @@ class _PortfolioHomeState extends State<PortfolioHome> {
         duration: const Duration(milliseconds: 300),
         decoration: BoxDecoration(
           color: _scrolled
-              ? AppColors.darkSurface.withOpacity(0.95)
+              ? AppColors.darkSurface.withValues(alpha: 0.95)
               : Colors.transparent,
           border: _scrolled
               ? Border(
                   bottom: BorderSide(
-                    color: AppColors.primaryPurple.withOpacity(0.15),
+                    color: AppColors.primaryPurple.withValues(alpha: 0.95),
                   ),
                 )
               : null,
           boxShadow: _scrolled
               ? [
                   BoxShadow(
-                    color: Colors.black.withOpacity(0.3),
+                    color: Colors.black.withValues(alpha: 0.95),
                     blurRadius: 20,
                   ),
                 ]
